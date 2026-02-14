@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Kaizer | Rock Band</title>
+    <meta
+      name="description"
+      content="Official page for The Kaizer: Aksel, Peder, Alv, Mikkel, and Benjamin."
+    />
+    <style>
+      :root {
+        --bg-1: #090b12;
+        --bg-2: #17102a;
+        --bg-3: #24112b;
+        --accent: #ff4d00;
+        --accent-2: #ffd000;
+        --text: #f4f5f8;
+        --muted: #c2c6d6;
+        --card: rgba(255, 255, 255, 0.06);
+        --line: rgba(255, 255, 255, 0.15);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at 10% 15%, #2a1943 0, transparent 35%),
+          radial-gradient(circle at 85% 5%, #692200 0, transparent 38%),
+          linear-gradient(130deg, var(--bg-1), var(--bg-2) 55%, var(--bg-3));
+        min-height: 100vh;
+      }
+
+      .page {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 1.25rem;
+      }
+
+      .hero {
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 2.5rem 1.25rem;
+        text-align: center;
+        background: linear-gradient(165deg, rgba(255, 77, 0, 0.2), rgba(0, 0, 0, 0.2));
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 0.35rem 0.8rem;
+        border-radius: 99px;
+        border: 1px solid var(--accent-2);
+        color: var(--accent-2);
+        letter-spacing: 0.07em;
+        font-size: 0.78rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0.65rem 0;
+        font-size: clamp(2.3rem, 7vw, 4.8rem);
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        text-shadow: 0 0 12px rgba(255, 77, 0, 0.6);
+      }
+
+      .subtitle {
+        margin: 0;
+        color: var(--muted);
+        font-size: clamp(1rem, 2.8vw, 1.35rem);
+      }
+
+      .pulse {
+        display: inline-block;
+        margin-top: 1rem;
+        color: var(--accent);
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        animation: pulse 1.5s infinite ease-in-out;
+      }
+
+      .grid {
+        margin-top: 1.4rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .card {
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 1rem;
+        background: var(--card);
+        backdrop-filter: blur(2px);
+      }
+
+      .card h2 {
+        margin: 0 0 0.4rem;
+        font-size: 1.05rem;
+        color: var(--accent-2);
+        letter-spacing: 0.04em;
+      }
+
+      .member-list {
+        margin: 0;
+        padding-left: 1rem;
+        line-height: 1.85;
+      }
+
+      .member-list li {
+        font-size: 1.07rem;
+        letter-spacing: 0.01em;
+      }
+
+      .cta {
+        margin-top: 1.4rem;
+        text-align: center;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 1.2rem;
+        background: rgba(0, 0, 0, 0.25);
+      }
+
+      .cta strong {
+        color: var(--accent-2);
+      }
+
+      footer {
+        margin: 1.8rem 0 0.6rem;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 0.6;
+          transform: translateY(0);
+        }
+        50% {
+          opacity: 1;
+          transform: translateY(-2px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <span class="badge">Official Band Page</span>
+        <h1>The Kaizer</h1>
+        <p class="subtitle">Young rock energy. Big amps. Loud nights.</p>
+        <span class="pulse">LIVE MODE: ON</span>
+      </section>
+
+      <section class="grid" aria-label="Band details">
+        <article class="card">
+          <h2>Band Members</h2>
+          <ul class="member-list">
+            <li>Aksel</li>
+            <li>Peder</li>
+            <li>Alv</li>
+            <li>Mikkel</li>
+            <li>Benjamin</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Sound</h2>
+          <p>Classic rock vibes mixed with modern punch, built by 5 friends who play with heart.</p>
+        </article>
+
+        <article class="card">
+          <h2>Next Goal</h2>
+          <p>Record our first demo and play our next live show for family, friends, and fans.</p>
+        </article>
+      </section>
+
+      <section class="cta">
+        <p><strong>The Kaizer</strong> is just getting started.</p>
+        <p>Follow the journey. More songs, photos, and show dates coming soon.</p>
+      </section>
+
+      <footer>
+        <p>&copy; 2026 The Kaizer. All riffs reserved.</p>
+      </footer>
+    </main>
+  </body>
+</html>

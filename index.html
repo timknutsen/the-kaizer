@@ -71,17 +71,6 @@
         text-shadow: 0 0 12px rgba(255, 77, 0, 0.6);
       }
 
-      .hero-photo {
-        width: 130px;
-        height: 130px;
-        object-fit: cover;
-        border-radius: 50%;
-        border: 3px solid var(--accent-2);
-        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
-        margin: 0.4rem auto 0.8rem;
-        display: block;
-      }
-
       .subtitle {
         margin: 0;
         color: var(--muted);
@@ -102,6 +91,39 @@
         display: grid;
         gap: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .frontman {
+        margin-top: 1.4rem;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 1rem;
+        background: var(--card);
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 150px 1fr;
+        align-items: center;
+      }
+
+      .frontman-photo {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 14px;
+        border: 2px solid var(--accent-2);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+      }
+
+      .frontman h2 {
+        margin: 0 0 0.45rem;
+        color: var(--accent-2);
+        letter-spacing: 0.04em;
+      }
+
+      .frontman p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.55;
       }
 
       .card {
@@ -161,6 +183,17 @@
           transform: translateY(-2px);
         }
       }
+
+      @media (max-width: 650px) {
+        .frontman {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+
+        .frontman-photo {
+          margin: 0 auto;
+        }
+      }
     </style>
   </head>
   <body>
@@ -168,9 +201,19 @@
       <section class="hero">
         <span class="badge">Official Band Page</span>
         <h1>The Kaizer</h1>
-        <img src="aksel.png" alt="Aksel from The Kaizer" class="hero-photo" />
         <p class="subtitle">Young rock energy. Big amps. Loud nights.</p>
         <span class="pulse">LIVE MODE: ON</span>
+      </section>
+
+      <section class="frontman" aria-label="Frontman introduction">
+        <img src="aksel.png" alt="Aksel from The Kaizer" class="frontman-photo" />
+        <div>
+          <h2>Frontman: Aksel</h2>
+          <p>
+            Aksel leads The Kaizer from the front with attitude, energy, and a love for loud rock.
+            He sets the tone on stage and keeps the crowd moving from first riff to last chorus.
+          </p>
+        </div>
       </section>
 
       <section class="grid" aria-label="Band details">
